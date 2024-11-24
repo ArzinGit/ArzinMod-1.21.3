@@ -12,6 +12,7 @@ import net.minecraft.util.Identifier;
 
 public class ModItems {
     public static final Item MARIOS_ITEM = registerItem("marios_item", new Item(new Item.Settings().registryKey(RegistryKey.of(RegistryKeys.ITEM,Identifier.of(ArzinMod.MOD_ID,"marios_item")))));
+    public static final Item RED_KEY = registerItem("red_key", new Item(new Item.Settings().registryKey(RegistryKey.of(RegistryKeys.ITEM,Identifier.of(ArzinMod.MOD_ID,"red_key")))));
 
 
     private static Item registerItem(String name, Item item) {
@@ -21,8 +22,11 @@ public class ModItems {
     public static void registerModItems() {
         ArzinMod.LOGGER.info("Registering Mod Items for "+ArzinMod.MOD_ID);
 
-        ItemGroupEvents.modifyEntriesEvent(ItemGroups.INGREDIENTS).register(entries -> {
+        ItemGroupEvents.modifyEntriesEvent(ItemGroups.COMBAT).register(entries -> {
             entries.add(MARIOS_ITEM);
+        });
+        ItemGroupEvents.modifyEntriesEvent(ItemGroups.FUNCTIONAL).register(entries -> {
+            entries.add(RED_KEY);
         });
     }
 }
