@@ -1,0 +1,39 @@
+{
+	"schemaVersion": 1,
+	"id": "arzinmod",
+	"version": "${version}",
+	"name": "Arzin's Amazing Additions",
+	"description": "Features, Tweaks, and Improvements all by yours truly.",
+	"authors": [
+		"Arzinist"
+	],
+	"contact": {
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/arzinmod/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.arzinist.supermod.ArzinMod"
+		],
+		"fabric-datagen": [
+			"net.arzinist.supermod.ArzinModDataGenerator"
+		],
+		"client": [
+			"net.arzinist.supermod.ArzinModClient"
+		]
+	},
+	"mixins": [
+		"arzinmod.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.16.9",
+		"minecraft": "~1.21.3",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
