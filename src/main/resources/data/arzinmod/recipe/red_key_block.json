@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "###",
+    "###",
+    "###"
+  ],
+  "key": {
+    "#": "arzinmod:red_key"
+  },
+  "result": {
+    "id": "arzinmod:red_key_block",
+    "count": 1
+  },
+  "show_notification": true
+}

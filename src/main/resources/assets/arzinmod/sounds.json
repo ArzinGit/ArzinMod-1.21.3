@@ -1,0 +1,14 @@
+{
+  "chasemusic": {
+    "category": "master",
+    "sounds": [
+      "arzinmod:chasemusic"
+    ]
+  },
+  "caught": {
+    "category": "master",
+    "sounds": [
+      "arzinmod:caught"
+    ]
+  }
+}

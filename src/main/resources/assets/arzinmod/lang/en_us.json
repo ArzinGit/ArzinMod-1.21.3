@@ -1,4 +1,9 @@
 {
   "item.arzinmod.marios_item": "Mario's Item",
-  "item.arzinmod.red_key": "Red Key"
+  "item.arzinmod.red_key": "Red Key",
+
+  "item.arzinmod.red_key_block": "Red Key Block",
+  "item.arzinmod.horror_block": "Horrifying Block",
+
+  "itemgroup.arzinmod.arzin_tab": "Arzin Items"
 }
